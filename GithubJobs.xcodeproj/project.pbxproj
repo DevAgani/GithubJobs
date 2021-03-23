@@ -25,6 +25,7 @@
 		67D2B4642609BAA3003A70B8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B4632609BAA3003A70B8 /* Error.swift */; };
 		67D2B46C2609BABB003A70B8 /* GithubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B46B2609BABB003A70B8 /* GithubAPIService.swift */; };
 		67D2B471260A06B1003A70B8 /* GithubJobsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */; };
+		67D2B47A260A857C003A70B8 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B479260A857C003A70B8 /* String+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		67D2B4632609BAA3003A70B8 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		67D2B46B2609BABB003A70B8 /* GithubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIService.swift; sourceTree = "<group>"; };
 		67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsDetailViewController.swift; sourceTree = "<group>"; };
+		67D2B479260A857C003A70B8 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		67552A1C26099F980062A3A3 /* GithubJobs */ = {
 			isa = PBXGroup;
 			children = (
+				67D2B478260A856D003A70B8 /* Extensions */,
 				67D2B4622609BA8B003A70B8 /* Networking */,
 				67D2B45C2609B971003A70B8 /* Models */,
 				67D2B4512609B403003A70B8 /* View */,
@@ -196,6 +199,14 @@
 				67D2B46B2609BABB003A70B8 /* GithubAPIService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		67D2B478260A856D003A70B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				67D2B479260A857C003A70B8 /* String+extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				67D2B45E2609B984003A70B8 /* GithubJobModel.swift in Sources */,
 				67D2B4642609BAA3003A70B8 /* Error.swift in Sources */,
 				67552A2026099F980062A3A3 /* SceneDelegate.swift in Sources */,
+				67D2B47A260A857C003A70B8 /* String+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

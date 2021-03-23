@@ -27,6 +27,8 @@ class GithubJobTableViewCell: UITableViewCell {
         self.companyLogo.image = UIImage(systemName: "folder.fill")
         self.timeSinceLastPostingLabel.text = model.created_at
     }
+    
+    
 
     
 }

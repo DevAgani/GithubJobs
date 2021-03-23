@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yut-Zq-FgL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -25,13 +25,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzM-g8-dOW">
-                                <rect key="frame" x="16" y="74" width="382" height="30.5"/>
+                                <rect key="frame" x="16" y="118" width="382" height="30.5"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim" family="GT Walsheim" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnZ-Zv-iRd">
-                                <rect key="frame" x="358" y="124.5" width="40" height="40"/>
+                                <rect key="frame" x="358" y="168.5" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.41176470588235292" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="8Sp-NC-SPG"/>
@@ -45,14 +45,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for Jobs" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-SR-uZV">
-                                <rect key="frame" x="13" y="122" width="335" height="40"/>
+                                <rect key="frame" x="13" y="166" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cqZ-Hv-8lx"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I8o-yp-lez">
-                                <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                                <rect key="frame" x="0.0" y="236" width="414" height="626"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GithubJobTableViewCell" id="HQg-eh-lNJ">
@@ -88,6 +88,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="I8o-yp-lez" secondAttribute="bottom" id="x5E-HB-iJt"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="XBc-qZ-oZA"/>
                     <connections>
                         <outlet property="jobLoadingIndicator" destination="96v-mx-rrE" id="mc2-hH-3n4"/>
                         <outlet property="jobsFilterButton" destination="VnZ-Zv-iRd" id="8ek-tR-9cG"/>
@@ -97,12 +98,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30.434782608695656" y="88.392857142857139"/>
+            <point key="canvasLocation" x="879.71014492753625" y="88.392857142857139"/>
         </scene>
         <!--Github Jobs Detail View Controller-->
         <scene sceneID="rkz-fy-3RT">
             <objects>
-                <viewController id="Rr8-5M-5zC" customClass="GithubJobsDetailViewController" customModule="GithubJobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GithubJobsDetailViewController" id="Rr8-5M-5zC" customClass="GithubJobsDetailViewController" customModule="GithubJobs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M8T-cu-9gM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +117,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Interface Designer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73U-XO-UFE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Interface Designer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73U-XO-UFE">
                                         <rect key="frame" x="0.0" y="26" width="414" height="29.5"/>
                                         <fontDescription key="fontDescription" name="GTWalsheim-Light" family="GT Walsheim" pointSize="23"/>
                                         <nil key="textColor"/>
@@ -170,17 +171,17 @@
                                         <rect key="frame" x="131.5" y="0.0" width="119" height="90"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="hkd-JK-5T0">
-                                                <rect key="frame" x="36" y="23" width="47.5" height="44"/>
+                                                <rect key="frame" x="47.5" y="23" width="24" height="44"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job-type-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ldb-Ku-KRP">
-                                                        <rect key="frame" x="11.5" y="0.0" width="24" height="24"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="24" id="1XL-Nx-xzN"/>
                                                             <constraint firstAttribute="width" constant="24" id="5eR-fs-ANB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNj-7K-Lxz">
-                                                        <rect key="frame" x="0.0" y="30" width="47.5" height="14"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNj-7K-Lxz">
+                                                        <rect key="frame" x="10" y="30" width="4" height="14"/>
                                                         <fontDescription key="fontDescription" name="GTWalsheim" family="GT Walsheim" pointSize="12"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -241,9 +242,11 @@
                                 <rect key="frame" x="16" y="314" width="382" height="32"/>
                                 <segments>
                                     <segment title="Description"/>
-                                    <segment title="Skill Set"/>
-                                    <segment title="Activity"/>
+                                    <segment title="How to apply"/>
                                 </segments>
+                                <connections>
+                                    <action selector="changeSegment:" destination="Rr8-5M-5zC" eventType="valueChanged" id="cpw-nn-2Md"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frc-qc-sZP">
                                 <rect key="frame" x="16" y="367" width="382" height="18"/>
@@ -251,12 +254,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n1v-GB-moo">
-                                <rect key="frame" x="16" y="401" width="382" height="269"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n1v-GB-moo">
+                                <rect key="frame" x="16" y="401" width="382" height="304.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">A company in South Africa is looking to hire a full time Product Designer. The potential candidate must have a great eye for design and should be able to work in a fast-paced environment. Candidate should be proficient with Zoom and Slack. Relocation expenses will also be provided.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Q5D-7A-IuS">
@@ -303,16 +306,46 @@
                             <constraint firstItem="Frc-qc-sZP" firstAttribute="top" secondItem="clz-jp-S4t" secondAttribute="bottom" constant="22" id="b4t-h4-eck"/>
                             <constraint firstItem="Vng-VH-TRM" firstAttribute="trailing" secondItem="clz-jp-S4t" secondAttribute="trailing" constant="16" id="fGu-Ox-RfT"/>
                             <constraint firstItem="n1v-GB-moo" firstAttribute="top" secondItem="Frc-qc-sZP" secondAttribute="bottom" constant="16" id="hMw-cE-R7f"/>
+                            <constraint firstItem="Q5D-7A-IuS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="n1v-GB-moo" secondAttribute="bottom" constant="20" id="iHz-Rq-van"/>
                             <constraint firstItem="clz-jp-S4t" firstAttribute="top" secondItem="0eF-Oq-8Z3" secondAttribute="bottom" constant="37" id="jse-AC-qJ0"/>
                             <constraint firstItem="n1v-GB-moo" firstAttribute="leading" secondItem="Vng-VH-TRM" secondAttribute="leading" constant="16" id="kEs-3U-bbA"/>
-                            <constraint firstItem="n1v-GB-moo" firstAttribute="height" secondItem="M8T-cu-9gM" secondAttribute="height" multiplier="0.3" id="lMn-EJ-cig"/>
+                            <constraint firstItem="n1v-GB-moo" firstAttribute="height" secondItem="M8T-cu-9gM" secondAttribute="height" multiplier="0.34" id="lMn-EJ-cig"/>
                             <constraint firstItem="lyk-gP-D9O" firstAttribute="leading" secondItem="Vng-VH-TRM" secondAttribute="leading" id="tEQ-vv-MXD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VQy-IA-BE6"/>
+                    <connections>
+                        <outlet property="jobCompensation" destination="SOv-lx-WAE" id="sx1-sa-Jkg"/>
+                        <outlet property="jobDescription" destination="n1v-GB-moo" id="Mvm-8H-4bc"/>
+                        <outlet property="jobLocation" destination="S6f-uD-VDb" id="yEs-r0-TmT"/>
+                        <outlet property="jobTitle" destination="73U-XO-UFE" id="Rzj-kr-9qC"/>
+                        <outlet property="jobType" destination="egN-I5-tON" id="fR8-7m-IUj"/>
+                        <outlet property="jobTypes" destination="mNj-7K-Lxz" id="PdD-bY-sZl"/>
+                        <outlet property="segmentedControl" destination="clz-jp-S4t" id="Usr-mF-qdX"/>
+                        <outlet property="workingHours" destination="Hx4-e8-22b" id="k2a-KT-0xD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2W-97-mST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="88"/>
+            <point key="canvasLocation" x="1747.826086956522" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="TNn-Zj-Aqt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yut-Zq-FgL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M2e-7E-H9u">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zR2-mR-Cvk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0K-nT-Oj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30.434782608695656" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>

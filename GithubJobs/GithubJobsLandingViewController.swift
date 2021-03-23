@@ -17,6 +17,18 @@ class GithubJobsLandingViewController: UIViewController {
     @IBOutlet weak var jobsFilterButton: UIButton!
     @IBOutlet weak var jobsTableView: UITableView!
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+        super.viewWillAppear(animated)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        if(navigationController?.topViewController != self){
+            navigationController?.navigationBar.isHidden = false
+        }
+        super.viewWillDisappear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +43,8 @@ class GithubJobsLandingViewController: UIViewController {
     }
     
 //    Methods
+
+    
     func setupTableView() {
         jobsTableView.rowHeight = UITableView.automaticDimension
         jobsTableView.tableFooterView = UIView()
@@ -59,11 +73,28 @@ class GithubJobsLandingViewController: UIViewController {
         }
     }
     
+    // TEST- Show as popover on click
+    @objc func displayDetailsPage(){
+        
+    }
+    
 }
 
 extension GithubJobsLandingViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         jobs.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        jobsTableView.deselectRow(at: indexPath, animated: true)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let jobDetailsVC = storyboard.instantiateViewController(identifier: "GithubJobsDetailViewController") as? GithubJobsDetailViewController else {
+            return
+        }
+        jobDetailsVC.jobDetails = jobs[indexPath.row]
+        navigationController?.pushViewController(jobDetailsVC, animated: true)
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
