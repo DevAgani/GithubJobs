@@ -26,6 +26,8 @@
 		67D2B46C2609BABB003A70B8 /* GithubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B46B2609BABB003A70B8 /* GithubAPIService.swift */; };
 		67D2B471260A06B1003A70B8 /* GithubJobsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */; };
 		67D2B47A260A857C003A70B8 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B479260A857C003A70B8 /* String+extension.swift */; };
+		67FED093261CC369005A22D9 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FED092261CC369005A22D9 /* URL+extension.swift */; };
+		67FED098261CD3CF005A22D9 /* URLSession+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FED097261CD3CF005A22D9 /* URLSession+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		67D2B46B2609BABB003A70B8 /* GithubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIService.swift; sourceTree = "<group>"; };
 		67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsDetailViewController.swift; sourceTree = "<group>"; };
 		67D2B479260A857C003A70B8 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		67FED092261CC369005A22D9 /* URL+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+extension.swift"; sourceTree = "<group>"; };
+		67FED097261CD3CF005A22D9 /* URLSession+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67073F072613887F00A0ED9F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		67073F082613888B00A0ED9F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		67073F092613889A00A0ED9F /* Props */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Props;
+			sourceTree = "<group>";
+		};
+		67073F0A261388CE00A0ED9F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		67552A1126099F980062A3A3 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +153,11 @@
 		67552A1C26099F980062A3A3 /* GithubJobs */ = {
 			isa = PBXGroup;
 			children = (
+				67FED091261CC271005A22D9 /* ViewControllers */,
+				67073F0A261388CE00A0ED9F /* Protocols */,
+				67073F092613889A00A0ED9F /* Props */,
+				67073F082613888B00A0ED9F /* Controllers */,
+				67073F072613887F00A0ED9F /* Presenters */,
 				67D2B478260A856D003A70B8 /* Extensions */,
 				67D2B4622609BA8B003A70B8 /* Networking */,
 				67D2B45C2609B971003A70B8 /* Models */,
@@ -128,12 +165,10 @@
 				67552A562609A06A0062A3A3 /* Resources */,
 				67552A1D26099F980062A3A3 /* AppDelegate.swift */,
 				67552A1F26099F980062A3A3 /* SceneDelegate.swift */,
-				67552A2126099F980062A3A3 /* GithubJobsLandingViewController.swift */,
 				67552A2326099F980062A3A3 /* Main.storyboard */,
 				67552A2626099F9C0062A3A3 /* Assets.xcassets */,
 				67552A2826099F9C0062A3A3 /* LaunchScreen.storyboard */,
 				67552A2B26099F9C0062A3A3 /* Info.plist */,
-				67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */,
 			);
 			path = GithubJobs;
 			sourceTree = "<group>";
@@ -205,8 +240,19 @@
 			isa = PBXGroup;
 			children = (
 				67D2B479260A857C003A70B8 /* String+extension.swift */,
+				67FED092261CC369005A22D9 /* URL+extension.swift */,
+				67FED097261CD3CF005A22D9 /* URLSession+extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67FED091261CC271005A22D9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67552A2126099F980062A3A3 /* GithubJobsLandingViewController.swift */,
+				67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,10 +395,12 @@
 				67D2B471260A06B1003A70B8 /* GithubJobsDetailViewController.swift in Sources */,
 				67D2B46C2609BABB003A70B8 /* GithubAPIService.swift in Sources */,
 				67552A1E26099F980062A3A3 /* AppDelegate.swift in Sources */,
+				67FED098261CD3CF005A22D9 /* URLSession+extension.swift in Sources */,
 				67D2B45E2609B984003A70B8 /* GithubJobModel.swift in Sources */,
 				67D2B4642609BAA3003A70B8 /* Error.swift in Sources */,
 				67552A2026099F980062A3A3 /* SceneDelegate.swift in Sources */,
 				67D2B47A260A857C003A70B8 /* String+extension.swift in Sources */,
+				67FED093261CC369005A22D9 /* URL+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

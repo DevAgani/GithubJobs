@@ -15,7 +15,7 @@ class GithubJobsLandingViewController: UIViewController {
     @IBOutlet weak var jobsSearchBar: UISearchBar!
     @IBOutlet weak var jobLoadingIndicator: UIActivityIndicatorView!
     @IBOutlet weak var jobsFilterButton: UIButton!
-    @IBOutlet weak var jobsTableView: UITableView!
+    @IBOutlet weak var jobsTableView: UITableView! 
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +36,7 @@ class GithubJobsLandingViewController: UIViewController {
         jobsTableView.dataSource = self
         jobsTableView.delegate = self
         //FetchNetworkData
+        jobLoadingIndicator.startAnimating()
         jobLoadingIndicator.isHidden = false
         jobsTableView.isHidden = true
         fetchNetworkJobs()
@@ -57,20 +58,25 @@ class GithubJobsLandingViewController: UIViewController {
         jobsFilterButton.layer.cornerRadius = 5
     }
     func fetchNetworkJobs() {
-        GithubAPIService.shared.fetchAllJobs { [weak self] result in
-            guard let `self` = self else {
-                return
-            }
-            self.jobLoadingIndicator.isHidden = true
-            switch result {
-            case .failure(let error):
-                print("Error occured \(error)")
-            case .success(let jobs):
-                self.jobsTableView.isHidden = false
-                self.jobs = jobs
-                self.jobsTableView.reloadData()
+        
+        DispatchQueue.main.async {
+            GithubAPIService.shared.fetchAllJobs { [weak self] result in
+                guard let `self` = self else {
+                    return
+                }
+//                self.jobLoadingIndicator.stopAnimating()
+                self.jobLoadingIndicator.isHidden = true
+                switch result {
+                case .failure(let error):
+                    print("Error occured \(error)")
+                case .success(let jobs):
+                    self.jobsTableView.isHidden = false
+                    self.jobs = jobs
+                    self.jobsTableView.reloadData()
+                }
             }
         }
+        
     }
     
     // TEST- Show as popover on click
