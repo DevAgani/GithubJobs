@@ -7,8 +7,12 @@
 
 import UIKit
 
-class GithubJobsLandingViewController: UIViewController {
+class GithubJobsLandingViewController: UIViewController, Storyboardable {
     var jobs = [GithubJob]()
+    
+    
+    // MARK: - Properties
+    var didShowGithubJobDetails: ((GithubJob) -> Void)?
     
     
 //    MARK: - Outlets
@@ -88,12 +92,9 @@ extension GithubJobsLandingViewController: UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         jobsTableView.deselectRow(at: indexPath, animated: true)
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let jobDetailsVC = storyboard.instantiateViewController(identifier: "GithubJobsDetailViewController") as? GithubJobsDetailViewController else {
-            return
-        }
-        jobDetailsVC.jobDetails = jobs[indexPath.row]
-        navigationController?.pushViewController(jobDetailsVC, animated: true)
+        let githubJobDetail = jobs[indexPath.row]
+        // Invoke Handler
+        didShowGithubJobDetails?(githubJobDetail)
         
     }
     

@@ -13,7 +13,7 @@
 		67552A2526099F980062A3A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67552A2326099F980062A3A3 /* Main.storyboard */; };
 		67552A2726099F9C0062A3A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67552A2626099F9C0062A3A3 /* Assets.xcassets */; };
 		67552A2A26099F9C0062A3A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67552A2826099F9C0062A3A3 /* LaunchScreen.storyboard */; };
-		67552A3526099F9C0062A3A3 /* GithubJobsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67552A3426099F9C0062A3A3 /* GithubJobsTests.swift */; };
+		67552A3526099F9C0062A3A3 /* StoryboardableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67552A3426099F9C0062A3A3 /* StoryboardableTests.swift */; };
 		67552A4026099F9C0062A3A3 /* GithubJobsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67552A3F26099F9C0062A3A3 /* GithubJobsUITests.swift */; };
 		67552A5C2609A2250062A3A3 /* gt-walsheim-light-web.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67552A582609A2250062A3A3 /* gt-walsheim-light-web.ttf */; };
 		67552A5D2609A2250062A3A3 /* gt-walsheim-medium-web.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67552A592609A2250062A3A3 /* gt-walsheim-medium-web.ttf */; };
@@ -26,6 +26,8 @@
 		67D2B46C2609BABB003A70B8 /* GithubAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B46B2609BABB003A70B8 /* GithubAPIService.swift */; };
 		67D2B471260A06B1003A70B8 /* GithubJobsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */; };
 		67D2B47A260A857C003A70B8 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B479260A857C003A70B8 /* String+extension.swift */; };
+		67E328902639D874004F6B9C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3288F2639D874004F6B9C /* AppCoordinator.swift */; };
+		67E328A42639DF0E004F6B9C /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E328A32639DF0E004F6B9C /* Storyboardable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +57,7 @@
 		67552A2926099F9C0062A3A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67552A2B26099F9C0062A3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67552A3026099F9C0062A3A3 /* GithubJobsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubJobsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		67552A3426099F9C0062A3A3 /* GithubJobsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsTests.swift; sourceTree = "<group>"; };
+		67552A3426099F9C0062A3A3 /* StoryboardableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardableTests.swift; sourceTree = "<group>"; };
 		67552A3626099F9C0062A3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67552A3B26099F9C0062A3A3 /* GithubJobsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubJobsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67552A3F26099F9C0062A3A3 /* GithubJobsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsUITests.swift; sourceTree = "<group>"; };
@@ -71,6 +73,8 @@
 		67D2B46B2609BABB003A70B8 /* GithubAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIService.swift; sourceTree = "<group>"; };
 		67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsDetailViewController.swift; sourceTree = "<group>"; };
 		67D2B479260A857C003A70B8 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		67E3288F2639D874004F6B9C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		67E328A32639DF0E004F6B9C /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,19 +125,18 @@
 		67552A1C26099F980062A3A3 /* GithubJobs */ = {
 			isa = PBXGroup;
 			children = (
+				67E328A22639DEF6004F6B9C /* Protocol */,
+				67E328A12639DEE8004F6B9C /* ViewControllers */,
+				67E328A02639DED5004F6B9C /* Storyboards */,
+				67E328972639D9B4004F6B9C /* Delegates */,
+				67E3288E2639D857004F6B9C /* Coordinators */,
 				67D2B478260A856D003A70B8 /* Extensions */,
 				67D2B4622609BA8B003A70B8 /* Networking */,
 				67D2B45C2609B971003A70B8 /* Models */,
 				67D2B4512609B403003A70B8 /* View */,
 				67552A562609A06A0062A3A3 /* Resources */,
-				67552A1D26099F980062A3A3 /* AppDelegate.swift */,
-				67552A1F26099F980062A3A3 /* SceneDelegate.swift */,
-				67552A2126099F980062A3A3 /* GithubJobsLandingViewController.swift */,
-				67552A2326099F980062A3A3 /* Main.storyboard */,
 				67552A2626099F9C0062A3A3 /* Assets.xcassets */,
-				67552A2826099F9C0062A3A3 /* LaunchScreen.storyboard */,
 				67552A2B26099F9C0062A3A3 /* Info.plist */,
-				67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */,
 			);
 			path = GithubJobs;
 			sourceTree = "<group>";
@@ -141,7 +144,7 @@
 		67552A3326099F9C0062A3A3 /* GithubJobsTests */ = {
 			isa = PBXGroup;
 			children = (
-				67552A3426099F9C0062A3A3 /* GithubJobsTests.swift */,
+				67552A3426099F9C0062A3A3 /* StoryboardableTests.swift */,
 				67552A3626099F9C0062A3A3 /* Info.plist */,
 			);
 			path = GithubJobsTests;
@@ -207,6 +210,49 @@
 				67D2B479260A857C003A70B8 /* String+extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		67E3288E2639D857004F6B9C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				67E3288F2639D874004F6B9C /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		67E328972639D9B4004F6B9C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				67552A1D26099F980062A3A3 /* AppDelegate.swift */,
+				67552A1F26099F980062A3A3 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		67E328A02639DED5004F6B9C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				67552A2326099F980062A3A3 /* Main.storyboard */,
+				67552A2826099F9C0062A3A3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		67E328A12639DEE8004F6B9C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				67D2B470260A06B1003A70B8 /* GithubJobsDetailViewController.swift */,
+				67552A2126099F980062A3A3 /* GithubJobsLandingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		67E328A22639DEF6004F6B9C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				67E328A32639DF0E004F6B9C /* Storyboardable.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,8 +390,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E328A42639DF0E004F6B9C /* Storyboardable.swift in Sources */,
 				67D2B4542609B425003A70B8 /* GithubJobTableViewCell.swift in Sources */,
 				67552A2226099F980062A3A3 /* GithubJobsLandingViewController.swift in Sources */,
+				67E328902639D874004F6B9C /* AppCoordinator.swift in Sources */,
 				67D2B471260A06B1003A70B8 /* GithubJobsDetailViewController.swift in Sources */,
 				67D2B46C2609BABB003A70B8 /* GithubAPIService.swift in Sources */,
 				67552A1E26099F980062A3A3 /* AppDelegate.swift in Sources */,
@@ -360,7 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67552A3526099F9C0062A3A3 /* GithubJobsTests.swift in Sources */,
+				67552A3526099F9C0062A3A3 /* StoryboardableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

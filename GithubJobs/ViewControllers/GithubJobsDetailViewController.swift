@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GithubJobsDetailViewController: UIViewController {
+class GithubJobsDetailViewController: UIViewController, Storyboardable {
     
     var jobDetails : GithubJob?
     

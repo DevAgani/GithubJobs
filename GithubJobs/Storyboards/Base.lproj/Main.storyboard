@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yut-Zq-FgL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -19,19 +19,19 @@
         <!--Github Jobs Landing View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GithubJobsLandingViewController" customModule="GithubJobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GithubJobsLandingViewController" id="BYZ-38-t0r" customClass="GithubJobsLandingViewController" customModule="GithubJobs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzM-g8-dOW">
-                                <rect key="frame" x="16" y="118" width="382" height="30.5"/>
+                                <rect key="frame" x="16" y="74" width="382" height="30.5"/>
                                 <fontDescription key="fontDescription" name="GTWalsheim" family="GT Walsheim" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnZ-Zv-iRd">
-                                <rect key="frame" x="358" y="168.5" width="40" height="40"/>
+                                <rect key="frame" x="358" y="124.5" width="40" height="40"/>
                                 <color key="backgroundColor" red="0.59999999999999998" green="0.41176470588235292" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="8Sp-NC-SPG"/>
@@ -45,14 +45,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for Jobs" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-SR-uZV">
-                                <rect key="frame" x="13" y="166" width="335" height="40"/>
+                                <rect key="frame" x="13" y="122" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cqZ-Hv-8lx"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I8o-yp-lez">
-                                <rect key="frame" x="0.0" y="236" width="414" height="626"/>
+                                <rect key="frame" x="0.0" y="192" width="414" height="670"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GithubJobTableViewCell" id="HQg-eh-lNJ">
@@ -328,24 +328,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2W-97-mST" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1747.826086956522" y="87.723214285714278"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TNn-Zj-Aqt">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yut-Zq-FgL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M2e-7E-H9u">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zR2-mR-Cvk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H0K-nT-Oj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-30.434782608695656" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
