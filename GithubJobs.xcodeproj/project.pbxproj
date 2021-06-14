@@ -19,6 +19,7 @@
 		67552A5D2609A2250062A3A3 /* gt-walsheim-medium-web.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67552A592609A2250062A3A3 /* gt-walsheim-medium-web.ttf */; };
 		67552A5E2609A2250062A3A3 /* gt-walsheim-bold-web.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67552A5A2609A2250062A3A3 /* gt-walsheim-bold-web.ttf */; };
 		67552A5F2609A2250062A3A3 /* gt-walsheim-web.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67552A5B2609A2250062A3A3 /* gt-walsheim-web.ttf */; };
+		6799FB9126770F990011B4B4 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799FB9026770F990011B4B4 /* BaseCoordinator.swift */; };
 		67D2B4542609B425003A70B8 /* GithubJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B4522609B425003A70B8 /* GithubJobTableViewCell.swift */; };
 		67D2B4552609B425003A70B8 /* GithubJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D2B4532609B425003A70B8 /* GithubJobTableViewCell.xib */; };
 		67D2B45E2609B984003A70B8 /* GithubJobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B45D2609B984003A70B8 /* GithubJobModel.swift */; };
@@ -28,6 +29,7 @@
 		67D2B47A260A857C003A70B8 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D2B479260A857C003A70B8 /* String+extension.swift */; };
 		67E328902639D874004F6B9C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3288F2639D874004F6B9C /* AppCoordinator.swift */; };
 		67E328A42639DF0E004F6B9C /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E328A32639DF0E004F6B9C /* Storyboardable.swift */; };
+		AC76F9FC37CE91F9C0BA00D6 /* Pods_GithubJobs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752BA050C075EBC0B2E8A972 /* Pods_GithubJobs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		429734573D26A1967F33D2E1 /* Pods-GithubJobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubJobs.release.xcconfig"; path = "Target Support Files/Pods-GithubJobs/Pods-GithubJobs.release.xcconfig"; sourceTree = "<group>"; };
 		67552A1A26099F980062A3A3 /* GithubJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67552A1D26099F980062A3A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67552A1F26099F980062A3A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		67552A592609A2250062A3A3 /* gt-walsheim-medium-web.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gt-walsheim-medium-web.ttf"; sourceTree = "<group>"; };
 		67552A5A2609A2250062A3A3 /* gt-walsheim-bold-web.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gt-walsheim-bold-web.ttf"; sourceTree = "<group>"; };
 		67552A5B2609A2250062A3A3 /* gt-walsheim-web.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "gt-walsheim-web.ttf"; sourceTree = "<group>"; };
+		6799FB9026770F990011B4B4 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		67D2B4522609B425003A70B8 /* GithubJobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobTableViewCell.swift; sourceTree = "<group>"; };
 		67D2B4532609B425003A70B8 /* GithubJobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GithubJobTableViewCell.xib; sourceTree = "<group>"; };
 		67D2B45D2609B984003A70B8 /* GithubJobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobModel.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 		67D2B479260A857C003A70B8 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 		67E3288F2639D874004F6B9C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		67E328A32639DF0E004F6B9C /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		752BA050C075EBC0B2E8A972 /* Pods_GithubJobs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubJobs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D6BE179CFD6889C1FA7176 /* Pods-GithubJobs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubJobs.debug.xcconfig"; path = "Target Support Files/Pods-GithubJobs/Pods-GithubJobs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC76F9FC37CE91F9C0BA00D6 /* Pods_GithubJobs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +116,8 @@
 				67552A3326099F9C0062A3A3 /* GithubJobsTests */,
 				67552A3E26099F9C0062A3A3 /* GithubJobsUITests */,
 				67552A1B26099F980062A3A3 /* Products */,
+				F5A7E072AB15C4CFC9E6D331 /* Pods */,
+				F4A8BF9387B6CCA3EA3E23D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -251,8 +260,27 @@
 			isa = PBXGroup;
 			children = (
 				67E328A32639DF0E004F6B9C /* Storyboardable.swift */,
+				6799FB9026770F990011B4B4 /* BaseCoordinator.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		F4A8BF9387B6CCA3EA3E23D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				752BA050C075EBC0B2E8A972 /* Pods_GithubJobs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5A7E072AB15C4CFC9E6D331 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6D6BE179CFD6889C1FA7176 /* Pods-GithubJobs.debug.xcconfig */,
+				429734573D26A1967F33D2E1 /* Pods-GithubJobs.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67552A4426099F9C0062A3A3 /* Build configuration list for PBXNativeTarget "GithubJobs" */;
 			buildPhases = (
+				F89A7326C17A8FEF91BA3388 /* [CP] Check Pods Manifest.lock */,
 				67552A1626099F980062A3A3 /* Sources */,
 				67552A1726099F980062A3A3 /* Frameworks */,
 				67552A1826099F980062A3A3 /* Resources */,
+				386D132C0B963F114354B7E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,6 +415,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		386D132C0B963F114354B7E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubJobs/Pods-GithubJobs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubJobs/Pods-GithubJobs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubJobs/Pods-GithubJobs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89A7326C17A8FEF91BA3388 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubJobs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67552A1626099F980062A3A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -397,6 +469,7 @@
 				67D2B471260A06B1003A70B8 /* GithubJobsDetailViewController.swift in Sources */,
 				67D2B46C2609BABB003A70B8 /* GithubAPIService.swift in Sources */,
 				67552A1E26099F980062A3A3 /* AppDelegate.swift in Sources */,
+				6799FB9126770F990011B4B4 /* BaseCoordinator.swift in Sources */,
 				67D2B45E2609B984003A70B8 /* GithubJobModel.swift in Sources */,
 				67D2B4642609BAA3003A70B8 /* Error.swift in Sources */,
 				67552A2026099F980062A3A3 /* SceneDelegate.swift in Sources */,
@@ -573,6 +646,7 @@
 		};
 		67552A4526099F9C0062A3A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D6BE179CFD6889C1FA7176 /* Pods-GithubJobs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -593,6 +667,7 @@
 		};
 		67552A4626099F9C0062A3A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 429734573D26A1967F33D2E1 /* Pods-GithubJobs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
